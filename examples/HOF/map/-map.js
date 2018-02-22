@@ -20,7 +20,7 @@ console.log(arrayMultiplyTenEachItem(R.range(1, 11)))
 
 
 // example 2
-const uppercase = string => R.toUpper(string)
+const uppercase = string => string.toUpperCase()
 
 const arrayUppercaseEachItem = array => {
   let newArray = []
