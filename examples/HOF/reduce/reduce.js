@@ -5,8 +5,8 @@ const R = require('ramda')
 const sum = (acc, item) => acc + item
 const arraySum = R.reduce(sum, 0)
 
-console.log(arraySum(R.range(1, 4)))
-console.log(sum(sum(sum(0, 1), 2), 3))
+console.log(arraySum([47, 11, 42, 13]))
+console.log(sum(sum(sum(sum(0, 47), 11), 42), 13))
 
 
 // example 2
