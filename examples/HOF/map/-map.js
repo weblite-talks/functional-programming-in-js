@@ -1,6 +1,3 @@
-const R = require('ramda')
-
-
 // example 1
 const multiplyTen = number => number * 10
 
@@ -14,7 +11,7 @@ const arrayMultiplyTenEachItem = array => {
   return newArray
 }
 
-console.log(arrayMultiplyTenEachItem(R.range(1, 11)))
+console.log(arrayMultiplyTenEachItem([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 
 
