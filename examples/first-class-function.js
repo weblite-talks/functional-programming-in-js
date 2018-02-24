@@ -2,10 +2,18 @@
 const greeting = 'HELLO'
 const multiply3 = a => a * 3
 
+console.log(multiply3(1))
+
+
+
 
 // array
 const arrayOfNumbers = [1, 2, 3, 4]
 const arrayOfFuncs = [a => a * 2, a => a * 3, multiply3]
+
+console.log(arrayOfFuncs[0](2))
+
+
 
 
 // object
@@ -21,6 +29,10 @@ const objectOfFunc = {
   multiply: (a, b) => a * b,
 }
 
+console.log(mapOfFunc.sum(2, 3))
+
+
+
 
 // function
 const sum = (a, b) => a + b
@@ -28,10 +40,5 @@ const functionsAsArgs = (func, value) => func(value)
 const functionAsReturnValue = () => () => 'Hi!!!'
 const returnFunction = functionAsReturnValue()
 
-
-// executions
-console.log(multiply3(1))
-console.log(arrayOfFuncs[0](2))
-console.log(mapOfFunc.sum(2, 3))
 console.log(functionsAsArgs(multiply3, 2))
 console.log(returnFunction())
