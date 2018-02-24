@@ -22,10 +22,15 @@ const hola = hola => {
 
 // partial applications
 const greeting = (first, second) => {
-  if (!second) return '${first}!'
+  if (!second) return `${first}!`
   return `${first} ${second}`
 }
-const hello = name => greeting('hello')
-const hey = name => greeting('hey')
-const ciao = name => greeting('ciao')
-const holas = name => greeting('holas')
+const hello1 = name => greeting('hello', name)
+const hey1 = name => greeting('hey', name)
+const ciao1 = name => greeting('ciao', name)
+const hola1 = name => greeting('holas', name)
+
+console.log(hello1('mostafa'))
+console.log(hey1('amir'))
+console.log(ciao1('ali'))
+console.log(hola1('masoud'))
