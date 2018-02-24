@@ -1,24 +1,26 @@
+const R = require('ramda')
+
 const items = [
   {
     quantity: 1,
-    price: 4.99,
+    price: 4,
     name: 'Some toy',
     shipping: false
   },
   {
     quantity: 3,
-    price: 8.99,
+    price: 8,
     name: 'Some fancier toy',
     shipping: false
   },
   {
     quantity: 1,
-    price: 40.00,
+    price: 40,
     name: 'Really fancy toy',
     shipping: false
   },
   {
-    price: 4.99,
+    price: 5,
     name: 'Shipping',
     shipping: true
   }
@@ -36,7 +38,10 @@ function getItemsTotal (total, current) {
   return total + current
 }
 
-const totalToysPrice = items
-  .filter(isShipping)
-  .map(getItemPrice)
-  .reduce(getItemsTotal, 0)
+const totalPrice = R.compose(
+  R.reduce(getItemsTotal, 0),
+  R.map(getItemPrice),
+  R.filter(isShipping),
+)(items)
+
+console.log(totalPrice)
