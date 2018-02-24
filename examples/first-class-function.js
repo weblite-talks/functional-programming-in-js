@@ -1,8 +1,24 @@
+// normal function
+function triple(x) {
+  return x * 3
+}
+
+console.log(triple(2)) // => 6
+
+
+
+
 // constant and variable
 const greeting = 'HELLO'
-const multiply3 = a => a * 3
+const double = function(x) {
+  return x * 2
+}
+const plus3 = a => a + 3
+const double1 = double
 
-console.log(multiply3(1))
+console.log(double(2)) // => 4
+console.log(double1(5)) // => 10
+console.log(plus3(1)) // => 4
 
 
 
@@ -11,7 +27,7 @@ console.log(multiply3(1))
 const arrayOfNumbers = [1, 2, 3, 4]
 const arrayOfFuncs = [a => a * 2, a => a * 3, multiply3]
 
-console.log(arrayOfFuncs[0](2))
+console.log(arrayOfFuncs[0](2)) // => 4
 
 
 
@@ -29,7 +45,7 @@ const objectOfFunc = {
   multiply: (a, b) => a * b,
 }
 
-console.log(mapOfFunc.sum(2, 3))
+console.log(mapOfFunc.sum(2, 3)) // => 5
 
 
 
