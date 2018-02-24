@@ -7,8 +7,14 @@ const mapOfFunc = {
   multiply: (a, b) => a * b,
 }
 
+const functionsAsArgs = (func, value) => func(value)
+
+const functionAsReturnValue = () => () => 'Hi!!!'
+const returnFunction = functionAsReturnValue()
+
 
 console.log(multiply3(1))
 console.log(arrayOfFuncs[0](2))
 console.log(mapOfFunc.sum(2, 3))
-console.log(mapOfFunc.multiply(2, 3))
+console.log(functionsAsArgs(multiply3, 2))
+console.log(returnFunction())
