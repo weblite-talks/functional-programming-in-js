@@ -1,6 +1,5 @@
 var x = 10
 
-const getNumberFromServer = () => 10
 
 const add1ToX = () => {
   x = x + 1 // side effects
@@ -34,11 +33,6 @@ class Calculator {
     this.x = this.x * Math.random() // 2 side effect
     return this
   }
-  multiplyByNumberGetFromServer() {
-    const number = getNumberFromServer() // side effect
-    this.x = this.x * number // side effect
-    return this
-  }
 }
 
 const newX = new Calculator(0)
@@ -47,5 +41,4 @@ const newX = new Calculator(0)
   .substract(16)
   .divide(8)
   .multiplyByRandom()
-  .multiplyByNumberGetFromServer()
   .logX()
