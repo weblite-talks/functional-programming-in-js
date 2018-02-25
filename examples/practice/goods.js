@@ -17,10 +17,9 @@ const items = [
 ]
 
 const calculateTotalPrice = R.compose(
-  total => `total price is: ${total}$`,
   R.reduce((total, current) => total + current, 0),
   R.map(item => item.quantity * item.price),
   R.filter(R.propEq('type', 'fruit')),
 )
 
-console.log(calculateTotalPrice(items)) // => total price is: 340$
+console.log(calculateTotalPrice(items)) // => 340
