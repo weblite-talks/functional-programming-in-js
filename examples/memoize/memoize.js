@@ -32,7 +32,7 @@ console.log(memoizedFactorial(10))
 
 
 
-// with memoization
+// with R.memoize
 const rMemoizedFactorial = R.memoize((a) => {
   console.log('i am running')
   if (a === 1) return 1
