@@ -1,10 +1,3 @@
-var x = 10
-
-
-const add1ToX = () => {
-  x = x + 1 // side effects
-}
-
 class Calculator {
   constructor(x) {
     this.x = x
@@ -37,8 +30,8 @@ class Calculator {
 
 const newX = new Calculator(0)
   .add(2)
-  .multiply(4)
+  .multiply(40)
   .substract(16)
   .divide(8)
   .multiplyByRandom()
-  .logX()
+  .logX() // => ?
