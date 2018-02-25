@@ -10,23 +10,23 @@ function fibonacci(a) {
 }
 
 const arr = [
-  37, 37, 37, 37,
+  42, 37, 37, 42,
   38, 38, 38, 38,
-  37, 37, 37, 37,
+  37, 42, 42, 37,
   38, 38, 38, 38,
-  37, 37, 37, 37,
+  37, 42, 42, 37,
   38, 38, 38, 38,
-  37, 37, 37, 37,
+  42, 37, 37, 42,
   39, 39, 39, 39,
 ]
 
 
-console.time('fib')
-pMap(fibonacci, arr)
-  .then(console.log)
-  .then(() => console.timeEnd('fib'))
-
 // console.time('fib')
-// const fibArr = R.map(fibonacci, arr)
-// console.log(fibArr)
-// console.timeEnd('fib')
+// pMap(fibonacci, arr)
+//   .then(console.log)
+//   .then(() => console.timeEnd('fib'))
+
+console.time('fib')
+const fibArr = R.map(fibonacci, arr)
+console.log(fibArr)
+console.timeEnd('fib')
