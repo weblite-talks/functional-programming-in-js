@@ -1,4 +1,4 @@
-onst a = Object.freeze({
+const a = Object.freeze({
   foo: { greeting: 'Hello' },
   bar: 'world',
   baz: '!'
