@@ -5,6 +5,8 @@ const R = require('ramda')
 // R.filter
 // R.reduce
 // R.propEq
+// x => expression
+
 
 const items = [
   { quantity: 10,  price: 4,   name: 'potato',  type: 'fruit' },
