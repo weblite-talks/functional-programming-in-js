@@ -1,2 +1,2 @@
 # functional-programming-in-js
-a bunch of functional programming in js example
+a bunch of functional programming in JS example
