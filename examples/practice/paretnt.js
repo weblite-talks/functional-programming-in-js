@@ -1,5 +1,12 @@
 const R = require('ramda')
 
+// R.assoc
+// R.filter
+// R.reduce
+// R.compose
+// recursion
+
+
 const mohammadiFamily = [
   { name: 'kazem mohammadi', parent: null },
 
