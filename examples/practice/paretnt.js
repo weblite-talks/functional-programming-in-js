@@ -5,6 +5,7 @@ const R = require('ramda')
 // R.reduce
 // R.compose
 // recursion
+// x => expression
 
 
 const mohammadiFamily = [
