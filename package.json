@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "paralleljs": "^0.2.1",
     "ramda": "^0.25.0"
   }
 }
