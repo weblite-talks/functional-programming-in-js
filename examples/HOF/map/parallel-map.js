@@ -26,7 +26,7 @@ const arr = [
 //   .then(console.log)
 //   .then(() => console.timeEnd('fib'))
 
-console.time('fib')
-const fibArr = R.map(fibonacci, arr)
-console.log(fibArr)
-console.timeEnd('fib')
+// console.time('fib')
+// const fibArr = R.map(fibonacci, arr)
+// console.log(fibArr)
+// console.timeEnd('fib')
