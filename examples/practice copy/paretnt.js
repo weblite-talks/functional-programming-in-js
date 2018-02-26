@@ -25,8 +25,8 @@ const mohammadiFamily = [
 const beautifulObjectLog = object =>
 
 const familyTree = (family, parent) => R.compose(
-  -
-  -
+  -,
+  -,
 )(family)
 
 console.log(JSON.stringify(familyTree(mohammadiFamily, null), null, 2))

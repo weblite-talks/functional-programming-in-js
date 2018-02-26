@@ -29,6 +29,6 @@ console.log(R.compose(
 
 
 console.log(R.compose(
-  R.map(number => (number * 3) + 1),
-  R.filter(number => number % 3 === 0),
+  -,
+  -,
 )(naturalSeries)) // => [10, 19, 28]

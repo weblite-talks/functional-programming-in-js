@@ -15,12 +15,12 @@ const firstCharMap = toWhat => R.compose(
 )
 
 const actionHandlerNameFromType = R.compose(
-  firstCharMap(R.toLower),
-  R.join(''),
-  R.map(firstCharMap(R.toUpper)),
-  R.map(R.toLower),
-  R.split('_'),
-  R.replace('WAPP_COMMUNICATE_', ''),
+  -,
+  -,
+  -,
+  -,
+  -,
+  -,
 )
 
 

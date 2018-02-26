@@ -59821,11 +59821,11 @@ const calculatePPI = (px_row, px_col, display_size) =>
 
 
 const getHighestPPI = R.compose(
-  -
-  -
-  -
-  -
-  -
+  -,
+  -,
+  -,
+  -,
+  -,
 )
 
 const data = getHighestPPI(dataset)

@@ -19,9 +19,9 @@ const items = [
 ]
 
 const calculateTotalPrice = R.compose(
-  -
-  -
-  -
+  -,
+  -,
+  -,
 )
 
 console.log(calculateTotalPrice(items)) // => 340
