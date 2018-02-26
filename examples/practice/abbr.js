@@ -12,10 +12,10 @@ const R = require('ramda')
 
 
 const abbr = R.compose(
-  R.join(''),
-  R.map(R.toUpper),
-  R.map(R.head),
-  R.split(' '),
+  R.join(''), // FP
+  R.map(R.toUpper), // ['F', 'P']
+  R.map(R.head), // ['f', 'p']
+  R.split(' '), // ['functional', 'programming']
 )
 
 
