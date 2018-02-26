@@ -1,11 +1,12 @@
 const R = require('ramda')
 
-// R.join
+// R.compose
+// R.map
 // R.toUpper
 // R.toLower
-// R.map
-// R.split
-// R.replace
+// R.join (' ', ['a', 2, 3.4]);   //=> 'a 2 3.4'
+// R.split ('/', '/usr/local/bin/node') // => ['usr', 'local', 'bin', 'node']
+// R.replace ('foo', 'bar', 'foo foo foo')s //=> 'bar foo foo'
 
 
 const firstCharMap = toWhat => R.compose(
