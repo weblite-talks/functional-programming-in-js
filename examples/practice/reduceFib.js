@@ -6,11 +6,11 @@ const R = require('ramda')
 // R.last
 
 
-const fibSeq = n => R.compose(
-  list => n === 1 ? R.head(list) : R.last(list),
+const fibSeq = nth => R.compose(
+  list => nth === 1 ? R.head(list) : R.last(list),
   n => R.reduce(numbers => ([numbers[1], numbers[0] + numbers[1]]), [0, 1], R.repeat(null, n)),
   n => (n >= 2) ? n - 2 : 0,
-)(n)
+)(nth)
 
 
 
