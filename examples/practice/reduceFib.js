@@ -1,9 +1,9 @@
 const R = require('ramda')
 
 // R.reduce
-// R.repeat
-// R.head
-// R.last
+// R.repeat (1, 3) => [1, 1, 1]
+// R.head [1, 2, 3] => 1
+// R.last  [1, 2, 3] => 3
 
 
 const fibSeq = nth => R.compose(

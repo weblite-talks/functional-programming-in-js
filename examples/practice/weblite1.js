@@ -1,7 +1,6 @@
 const R = require('ramda')
 
 // R.join
-// R.adjust
 // R.toUpper
 // R.toLower
 // R.map
@@ -24,5 +23,5 @@ const actionHandlerNameFromType = R.compose(
 )
 
 
-console.log(firstCharMap(R.toLower)('SALAM'))
+console.log(firstCharMap(R.toLower)('SALAM')) // => sLam
 console.log(actionHandlerNameFromType('WAPP_COMMUNICATE_CORE_LOAD_DATA')) // => coreLoadData

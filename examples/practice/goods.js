@@ -4,7 +4,7 @@ const R = require('ramda')
 // R.map
 // R.filter
 // R.reduce
-// R.propEq
+// R.propEq ('name', 'ali', { name: 'ali' }) => true
 // x => expression
 
 

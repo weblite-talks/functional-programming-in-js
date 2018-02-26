@@ -1,6 +1,6 @@
 const R = require('ramda')
 
-// R.assoc
+// R.assoc ('firstname', 'ali', { lastname: 'asgary' }) //=> { firstname: 'ali', lastname: 'asgary' }
 // R.filter
 // R.reduce
 // R.compose
