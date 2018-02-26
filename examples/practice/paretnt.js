@@ -21,6 +21,15 @@ const mohammadiFamily = [
   { name: 'zahra mohammadi', parent: 'hasan mohammadi' },
 ]
 
+
+const beautifulObjectLog = object => console.log(JSON.stringify(object, null, 2))
+
+const familyTree = (family, parent) => R.compose(
+  R.reduce((tree, member) => R.assoc(member.name, familyTree(family, member.name), tree), {}),
+  R.filter(member => member.parent === parent),
+)(family)
+
+beautifulObjectLog(familyTree(mohammadiFamily, null))
 // {
 //   'kazem mohammadi': {
 //
@@ -36,12 +45,3 @@ const mohammadiFamily = [
 //     },
 //   }
 // }
-
-const beautifulObjectLog = object => console.log(JSON.stringify(object, null, 2))
-
-const familyTree = (family, parent) => R.compose(
-  R.reduce((tree, member) => R.assoc(member.name, familyTree(family, member.name), tree), {}),
-  R.filter(member => member.parent === parent),
-)(family)
-
-beautifulObjectLog(familyTree(mohammadiFamily, null))

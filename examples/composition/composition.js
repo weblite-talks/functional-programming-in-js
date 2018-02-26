@@ -1,6 +1,10 @@
 const R = require('ramda')
 
 
+// R.groupBy (R.prop('name'), [{ name: 'a', n: 1 }, { name: 'a', n: 1 }, { name: 'b', n: 1 }])
+// => { a: [{ name: 'a', n: 1 }, { name: 'a', n: 1 }], b: { name: 'b', n: 1 } }
+
+
 const messages = [
   { from: 'ali', message: 'a', seen: false },
   { from: 'amirhossein', message: 'b', seen: true },
