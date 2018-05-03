@@ -33,7 +33,7 @@ const calFac = (initialValue) => {
         return divide(a)
         break;
       case 'get':
-        return number 
+        return number
         break;
       default:
         return 'not supported'

@@ -1,11 +1,11 @@
-const getNumberFunctionCreator = () => {
+const getNumberFunction = () => {
   var i = 1
 
   return () => i++
 }
 
-const getNumber1 = getNumberFunctionCreator()
-const getNumber2 = getNumberFunctionCreator()
+const getNumber1 = getNumberFunction()
+const getNumber2 = getNumberFunction()
 
 
 getNumber1()
