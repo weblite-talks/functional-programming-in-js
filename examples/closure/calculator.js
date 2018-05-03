@@ -1,32 +1,42 @@
-const calculatorFactory = () => {
-  const add = (a, b) => a + b // private
-  const subtract = (a, b) => a - b // private
-  const multiply = (a, b) => a * b // private
-  const divide = (a, b) => a / b // private
+const calFac = (initialValue) => {
+  let number = initialValue || 0
 
-  return (operator, a, b) => { // public
+  const add = (a) => {
+    number += a
+    return number
+  } // private
+  const subtract = (a) => {
+    number -= a
+    return number
+  } // private
+  const multiply = (a) => {
+    number *= a
+    return number
+  } // private
+  const divide = (a, b) => {
+    number /= a
+    return number
+  } // private
+
+  return (operator, a) => { // public
     switch (operator) {
       case 'add':
-        return add(a, b)
+        return add(a)
         break;
       case 'subtract':
-        return subtract(a, b)
+        return subtract(a)
         break;
       case 'multiply':
-        return multiply(a, b)
+        return multiply(a)
         break;
       case 'divide':
-        return divide(a, b)
+        return divide(a)
+        break;
+      case 'get':
+        return number 
         break;
       default:
         return 'not supported'
     }
   }
 }
-
-const calculator = calculatorFactory()
-
-console.log(calculator('add', 1, 0)) // => 1
-console.log(calculator('subtract', 3, 1)) // => 2
-console.log(calculator('multiply', 1, 3)) // => 3
-console.log(calculator('divide', 8, 2)) // => 4
